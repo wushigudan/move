@@ -118,6 +118,22 @@ git clone https://github.com/wushigudan/move.git
 - 快捷操作
 - 可定制界面
 
+## 📜 免责声明 | Disclaimer
+
+### 中文版
+1. **使用目的**：本应用程序仅供个人学习和技术研究使用，不得用于任何商业目的。
+2. **内容来源**：本应用不存储、制作或分发任何视频内容，所有视频内容均来自用户自行配置的第三方来源，用户对其配置的内容来源负有完全责任。
+3. **法律遵从**：用户必须遵守所在地区的相关法律法规，禁止使用本应用访问任何非法或未授权的内容，用户应确保其使用行为符合内容提供方的服务条款。
+4. **责任限制**：开发者不对使用本应用产生的任何直接或间接损失负责，不保证应用的持续可用性和内容的准确性，开发者保留随时修改或终止服务的权利。
+5. **隐私保护**：本应用重视用户隐私，不会收集或存储用户个人信息，所有设置和配置仅保存在用户本地设备。
+
+### English Version
+1. **Purpose of Use**: This application is intended solely for personal learning and technical research purposes, not for commercial use.
+2. **Content Sources**: This app does not store, produce, or distribute any video content. All video content comes from third-party sources configured by users. Users are fully responsible for their configured content sources.
+3. **Legal Compliance**: Users must comply with relevant laws and regulations in their jurisdiction. Use of this app to access any illegal or unauthorized content is prohibited. Users should ensure their usage complies with content providers' terms of service.
+4. **Liability Limitations**: Developers are not responsible for any direct or indirect losses from using this app. No guarantee is provided for the app's continuous availability or content accuracy. Developers reserve the right to modify or terminate services at any time.
+5. **Privacy Protection**: This app values user privacy and does not collect or store personal information. All settings and configurations are saved locally on the user's device.
+
 ## 🤝 参与贡献
 我们欢迎各种形式的贡献！
 - 报告问题
