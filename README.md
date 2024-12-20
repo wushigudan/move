@@ -135,4 +135,4 @@ git clone https://github.com/wushigudan/move.git
 如有问题或建议，请提交 issue 或联系维护者。
 
 ---
-由 VideoVoyage 团队用 ❤️ 打造
+由白衬衫用 ❤️ 打造 
