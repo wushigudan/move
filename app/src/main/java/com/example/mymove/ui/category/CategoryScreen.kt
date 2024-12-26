@@ -106,23 +106,47 @@ private fun CategoryGrid(
                 )
             }
             
-            // 添加该父分类下的所有子分类
+            // 获取该父分类下的所有子分类
             val childCategories = categories.filter { it.parentId == parentCategory.id }
-            items(childCategories) { category ->
-                ElevatedCard(
-                    onClick = { onCategorySelected(category.id, category.name) },
-                    modifier = Modifier.fillMaxWidth()
-                ) {
-                    Box(
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .padding(12.dp),
-                        contentAlignment = Alignment.Center
+            
+            if (childCategories.isEmpty()) {
+                // 如果没有子分类，就显示父分类本身作为可点击项
+                item {
+                    ElevatedCard(
+                        onClick = { onCategorySelected(parentCategory.id, parentCategory.name) },
+                        modifier = Modifier.fillMaxWidth()
                     ) {
-                        Text(
-                            text = category.name,
-                            style = MaterialTheme.typography.bodyMedium
-                        )
+                        Box(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(12.dp),
+                            contentAlignment = Alignment.Center
+                        ) {
+                            Text(
+                                text = "全部",
+                                style = MaterialTheme.typography.bodyMedium
+                            )
+                        }
+                    }
+                }
+            } else {
+                // 有子分类的情况，显示所有子分类
+                items(childCategories) { category ->
+                    ElevatedCard(
+                        onClick = { onCategorySelected(category.id, category.name) },
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Box(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(12.dp),
+                            contentAlignment = Alignment.Center
+                        ) {
+                            Text(
+                                text = category.name,
+                                style = MaterialTheme.typography.bodyMedium
+                            )
+                        }
                     }
                 }
             }
